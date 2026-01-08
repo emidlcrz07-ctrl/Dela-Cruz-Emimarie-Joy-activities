@@ -1,0 +1,20 @@
+body {
+            background: rgb(221, 181, 208);
+            font-family: Arial;
+            padding: 50px;
+
+        }
+
+        button {
+            padding: 10px 30px;
+            background: #dfd773;
+            color: rgb(132, 211, 116);
+            border: none;
+            border-radius: 200px; /* <-- pill shape */
+            cursor: pointer;
+
+        }
+
+        button:hover {
+            background: #d87171;
+        }
