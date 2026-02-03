@@ -1,51 +1,84 @@
-        * {
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
         body {
-            height: 100vh;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: transparent;
+            font-family: "Segoe UI", sans-serif;
+            background: linear-gradient(135deg, #fbcfe8, #f9a8d4);
         }
 
         .calculator {
             width: 260px;
-            padding: 10px;
+            margin: 80px auto;
+            padding: 20px;
+            border-radius: 20px;
+            background: #fce7f3;
+            box-shadow: 0 15px 30px rgba(219, 39, 119, 0.4);
         }
 
-        #display {
-            width: 100%;
-            height: 45px;
+        /* DISPLAY AREA */
+        .display {
+            display: flex;
+            gap: 6px;
             margin-bottom: 15px;
+        }
+
+        #valueBox {
+            width: 75%;
+            height: 60px;
+            font-size: 26px;
             text-align: right;
-            font-size: 20px;
-            padding: 5px 10px;
-            border: 2px solid #000;
-            background: transparent;
+            padding: 10px;
+            background: #fff0f6;
+            border-radius: 12px;
+            border: 2px solid #db2777;
+            color: #9d174d;
         }
 
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
+        #operatorBox {
+            width: 25%;
+            height: 60px;
+            font-size: 26px;
+            text-align: center;
+            padding: 10px;
+            background: #ffe4f1;
+            border-radius: 12px;
+            border: 2px solid #db2777;
+            color: #be185d;
+            font-weight: bold;
         }
 
-        button {
-            height: 45px;
-            font-size: 18px;
-            border: 2px solid #000;
-            background: transparent;
+        /* BUTTONS */
+        .btn {
+            height: 48px;
+            width: 48px;
+            margin: 4px;
+            border-radius: 50%;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            background: #ec4899;
+            color: white;
             cursor: pointer;
+            transition: 0.2s;
         }
 
-        button:active {
-            background: rgba(0, 0, 0, 0.1);
+        .btn:hover {
+            background: #db2777;
+            transform: scale(1.1);
         }
 
-        .wide {
-            grid-column: span 2;
+        .button {
+            height: 48px;
+            width: 104px;
+            margin: 4px;
+            border-radius: 14px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            background: #f472b6;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #ec4899;
+            transform: scale(1.05);
         }
