@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.2s ease;
+}
+
+body {
+  background: #ffeef5; /* very light pink */
+  padding: 20px;
+  margin: 0;
+}
+
+/* 🌸 Updated Fancy Glassmorphic Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 24px; /* more rounded for cute effect */
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(252, 231, 243, 0.6));
+  backdrop-filter: blur(14px); /* glass effect */
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  
+  /* layered shadows for floating look */
+  box-shadow:
+    0 20px 40px rgba(236, 72, 153, 0.2),
+    inset 0 2px 0 rgba(255, 255, 255, 0.5);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* hover lift for extra cuteness */
+.container:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 25px 50px rgba(236, 72, 153, 0.25),
+    inset 0 2px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* 🌸 Top bar (search input) */
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.top-bar input {
+  flex: 1 1 300px; /* grows but has min width */
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(251, 207, 232, 0.6);
+  background: rgba(255, 255, 255, 0.6);
+  outline: none;
+  color: #831843;
+  font-weight: 500;
+  min-width: 200px;
+}
+
+.top-bar input:focus {
+  border-color: #f472b6;
+  box-shadow: 0 0 8px rgba(244, 114, 182, 0.5);
+}
+
+/* 🌸 Filter Buttons */
+.filters {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  min-width: 120px;
+  border: none;
+  border-radius: 999px; /* pill */
+  background: linear-gradient(145deg, #f9a8d4, #fbcfe8);
+  color: #831843;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(236, 72, 153, 0.25);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(236, 72, 153, 0.35);
+  background: linear-gradient(145deg, #fbcfe8, #f9a8d4);
+}
+
+button:active {
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 5px 10px rgba(236, 72, 153, 0.2);
+}
+
+/* 🌸 Table Container (scrollable) */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  border-radius: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(251, 207, 232, 0.5);
+}
+
+th {
+  background: rgba(251, 207, 232, 0.5);
+  color: #9d174d;
+  font-weight: 600;
+}
+
+tr:hover {
+  background: rgba(251, 207, 232, 0.2);
+}
+
+/* 🌸 Status Colors */
+.pass {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.fail {
+  color: #be123c;
+  font-weight: bold;
+}
+
+/* 🌸 Responsive alignment */
+@media (max-width: 768px) {
+  .top-bar, .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+}
