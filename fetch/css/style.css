@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Login Container */
+.container {
+  width: 350px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.container h2 {
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+/* Input Fields */
+.container input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* Input Focus */
+.container input:focus {
+  box-shadow: 0 0 8px #fff;
+}
+
+/* Button */
+.container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #764ba2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Button Hover */
+.container button:hover {
+  background: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+/* Optional small text */
+.container p {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #eee;
+}
