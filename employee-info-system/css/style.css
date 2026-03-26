@@ -192,11 +192,11 @@ h1 {
 .table-custom td {
     padding: 12px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #e9e3e3;
 }
 
 .table-custom th {
-    background: #203a43;
+    background: #284853;
     color: white;
 }
 
