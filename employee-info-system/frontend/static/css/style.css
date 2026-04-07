@@ -6,11 +6,11 @@
 
 /* ── CSS Variables ─────────────────────────────────────────── */
 :root {
-  --primary:       #5b5ef4;
-  --primary-light: #7c7ff7;
+  --primary:       #2326cf;
+  --primary-light: #9092ff;
   --primary-dark:  #3d3fc7;
   --secondary:     #06b6d4;
-  --accent:        #f472b6;
+  --accent:        #f37fbb;
   --success:       #22c55e;
   --warning:       #f59e0b;
   --danger:        #ef4444;
